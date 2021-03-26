@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+   
+      <p> {{ msg }} </p>
+
+      <div>
+
+      <table class='table' border = 1>
+         <thead>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Url</td>
+            <td>Notes</td>
+            <td>Date</td>
+         </thead>
+         
+         {% for row in result %}
+            <tr>
+               <td>{{row.id}}</td>
+               <td>{{row.title}}</td>
+               <td> {{row.url}}</td>
+               <td>{{row.notes}}</td>	
+                <td>{{row.date_added}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+
+      </div>
+
+      <h2><a href = "\">return home page</a></h2>
+      
+   </body>
+</html>

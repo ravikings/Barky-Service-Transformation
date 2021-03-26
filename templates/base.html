@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+      
+
+      <h3>Welcome To Abdul's page </h3>
+   
+      
+      <form>
+
+         <div>
+         <h3>Get Bookmark Information</h3>
+         
+         (A) <a href = "{{url_for('new_bookmark')}}">Add a bookmark</a><br>  
+
+    
+         (B) <a href = "{{url_for('list')}}">List of bookmarks</a><br>  
+
+
+         (B) <a href = "{{url_for('bk_recent')}}">List bookmarks of Recent Title</a><br>  
+        
+         
+         (C) <a href = "{{url_for('new_filter')}}">Find bookmarks by id</a><br> 
+       
+
+         (D) <a href = "{{url_for('update')}}"> update a bookmark </a><br>
+
+
+         (D) <a href = "{{url_for('delete')}}">Delete a bookmark</a><br>
+          
+         </div>
+         
+      </form>
+      
+   </body>
+</html>
