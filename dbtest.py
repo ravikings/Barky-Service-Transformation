@@ -1,6 +1,6 @@
 import sqlite3
 import unittest
-from unittest import result
+from unittest import result, mock
 from app import *
 
 
@@ -33,5 +33,7 @@ class FlaskTest(unittest.TestCase):
         assert result_list == (9, 'Kapoor', 'www', 'notes', '12.3.34')
 
 # Testing delect function by using mocking method
-    def db_delete(self):
-
+    @mock.patch('app.bk_delete')
+    def db_delete(self, test_mock):
+        test_mock = bk_delete
+        assert test_mock is bk_delete
