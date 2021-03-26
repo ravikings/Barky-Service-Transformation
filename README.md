@@ -2,7 +2,7 @@
 
 This repo is for implement some features and testing
 
-Question trying to answer:
+Questions trying to answer:
 
 - Barky has some good design choices but it is not architected
 - Barky could benefit from a service layer
